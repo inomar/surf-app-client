@@ -1,5 +1,15 @@
 $box-radius: 5px;
 $box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14);
+$text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+$section-padding: 3rem 0;
+$section-padding-medium: 9rem 0;
+$section-padding-large: 18rem 0;
+
+$main-color: #1AA295;
+$sub-color: #BAE1DE;
+$point-color: #FF6435;
+$secondary-color: #655F57;
+$light-color: #A1A1A1;
 
 @import 'bulma/bulma';
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
@@ -18,6 +28,13 @@ body {
   }
 }
 
+.p-home {
+  &Tmp {
+    height: 300px;
+    background-color: $sub-color;
+  }
+}
+
 
 .p-post {
   &Card {
@@ -26,11 +43,22 @@ body {
     }
     &Body {
       padding: 10px 0;
+
+      &__title {
+        padding: 2px 0;
+        font-size: 0.9rem;
+      }
+      &__lead {
+        color: $light-color;
+        font-size: 0.7rem;
+      }
     }
     &__image {
       border-radius: $box-radius;
     }
     &__title {
+      color: #FFF;
+      text-shadow: $text-shadow;
       position: absolute;
       text-align: center;
       width: 90%;

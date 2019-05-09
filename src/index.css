@@ -6917,12 +6917,12 @@ label.panel-block {
   padding: 3rem 1.5rem; }
 
 .section {
-  padding: 3rem 1.5rem; }
+  padding: 3rem 0; }
   @media screen and (min-width: 1088px) {
     .section.is-medium {
-      padding: 9rem 1.5rem; }
+      padding: 9rem 0; }
     .section.is-large {
-      padding: 18rem 1.5rem; } }
+      padding: 18rem 0; } }
 
 .footer {
   background-color: #fafafa;
@@ -6936,16 +6936,28 @@ body {
   background-size: cover;
   background-image: url("./static/AdobeStock_202590199_Preview.jpeg"); }
 
+.p-homeTmp {
+  height: 300px;
+  background-color: #BAE1DE; }
+
 .p-postCardHead {
   position: relative; }
 
 .p-postCardBody {
   padding: 10px 0; }
+  .p-postCardBody__title {
+    padding: 2px 0;
+    font-size: 0.9rem; }
+  .p-postCardBody__lead {
+    color: #A1A1A1;
+    font-size: 0.7rem; }
 
 .p-postCard__image {
   border-radius: 5px; }
 
 .p-postCard__title {
+  color: #FFF;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   position: absolute;
   text-align: center;
   width: 90%;

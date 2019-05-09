@@ -1,0 +1,49 @@
+$box-radius: 5px;
+$box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14);
+
+@import 'bulma/bulma';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+$not-font: 'Noto Sans JP';
+
+body {
+  font-family: $not-font, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.p-hero {
+  &Background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./static/AdobeStock_202590199_Preview.jpeg");
+  }
+}
+
+
+.p-post {
+  &Card {
+    &Head {
+      position: relative;
+    }
+    &Body {
+      padding: 10px 0;
+    }
+    &__image {
+      border-radius: $box-radius;
+    }
+    &__title {
+      position: absolute;
+      text-align: center;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      margin: auto;
+    }
+  }
+}
+
+
+.u-shadow {
+  box-shadow: $box-shadow;
+}
